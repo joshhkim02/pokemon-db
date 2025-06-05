@@ -1,7 +1,9 @@
 package com.example.pokemon_box.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 /*
     Model/Entity Layer:
@@ -10,9 +12,11 @@ import jakarta.persistence.Id;
  */
 
 @Entity
+@Table(name="pokemon_data")
 public class Pokemon {
 
     @Id
+    @Column(name="poke_id")
     private Integer id;
 
     private String name;
