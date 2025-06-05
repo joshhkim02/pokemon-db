@@ -3,6 +3,12 @@ package com.example.pokemon_box.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+/*
+    Model/Entity Layer:
+    - Represents data structure and database tables
+    - Object initialization with variables, constructors, getters, setters, etc.
+ */
+
 @Entity
 public class Pokemon {
 

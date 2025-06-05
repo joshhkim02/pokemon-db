@@ -7,6 +7,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/*
+    Repository Layer:
+    - Data access and database operations
+ */
+
 @Repository
 public interface PokemonRepository extends JpaRepository<Pokemon, Integer> {
     List<Pokemon> findByNameContaining(String name);
